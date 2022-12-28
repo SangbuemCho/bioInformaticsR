@@ -8,7 +8,7 @@
 library(dada2)
 
 # load data
-path = "/Users/sangbuemcho/Documents/bioinformaticsR/Miyoung" # where the sequence files located
+path = "/Users/sangbuemcho/Documents/bioinformatics_R/Miyoung" # where the sequence files located
 fnFs <- sort(list.files(path, pattern="_1.fastq", full.names = TRUE)) # get all forward sequence files, pattern should be altered
 fnRs <- sort(list.files(path, pattern="_2.fastq", full.names = TRUE)) # get all reverse sequence files, pattern should be altered
 sample.names <- sapply(strsplit(basename(fnFs), "_"), `[`, 1) # create list of file name
